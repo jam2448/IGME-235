@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Phrases</title>
+    <link rel="stylesheet" href="random-phrases.css">
+</head>
+<body>
+    
+    <div id="topText">
+        <header>
+            <h1>Inspirational Quotes To Get Through the Day</h1>
+        </header>
+
+        <div id="phrases"> 
+            <p> </p>
+        </div>
+
+        <div id="button">
+            <button>New Quote</button>
+        </div>
+    </div>
+
+    <p>
+        Made by: Jarin Moses
+    </p>
+    
+
+    <script>
+        "use strict"
+
+        //set the phrases in an array of strings
+        let quotes = [
+            "Success is not final; failure is not fatal: It is the courage to continue that counts - Winston Churchill",
+            "You learn more from failure than from success. Do not let it stop you. Failure builds character. - Unknown",
+            "Either you run the day or the day runs you. - Jim Rohn",
+            "Opportunity is missed by most people because it is dressed in overalls and looks like work - Thomas Edison",
+            "Do not stop thinking of life as an adventure. You have no security unless you can live bravely, " +
+            "excitingly, imaginatively; unless you can choose a challenge instead of competence. - Eleanor Roosevelt",
+            "If you can dream it, you can do it. - Walt Disney"
+        ];
+
+        //access the phrases element 
+        let p = document.querySelector("p");
+
+        //function that gets a random quote 
+        function GetRandomQuote()
+        {
+            //random value
+            let random = Math.floor(Math.random() * quotes.length);
+            p.textContent = quotes[random];
+        }
+
+        //function that generates a random quote when a button is clicked
+        function HitButton()
+        {
+            GetRandomQuote();
+        }
+
+        //whenever the button is clicked the button will generate a new random quote;
+        document.querySelector("#button").onclick = HitButton;
+
+        //whenever the page is loaded a new quote should appear
+        document.addEventListener("DOMContentLoaded", GetRandomQuote);
+    </script>
+    
+</body>
+</html>
