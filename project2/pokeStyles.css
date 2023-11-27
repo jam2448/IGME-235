@@ -1,0 +1,118 @@
+
+*{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header h1{
+    margin:0;
+    color:#EDB230;
+    text-align:center;
+    font-size:100px;
+    padding-top: 35px;
+}
+
+h2{
+    color:white;
+}
+
+#status
+{
+    font-size: italic;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    margin: 10px;
+    gap: 20px;
+    color:#fff;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #0a2472;
+    background-color: black;
+    color: black;
+}
+
+.result span {
+    order: -1;
+}
+
+.result img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.result p {
+
+    margin: 3px;
+}
+
+#generations
+{
+    background-color: green;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+}
+
+#searchButton{
+    display : inline-block;
+    cursor : pointer;
+
+    border-style : solid;
+    border-width : 1px;
+    border-radius : 50px;
+    padding : 15px 25px;
+    box-shadow : 0 1px 4px rgba(0,0,0,.6);
+    font-size : 15pt;
+    font-weight : bold;
+    color : #fff;
+    text-shadow : 0 1px 3px rgba(0,0,0,.4);
+    font-family : sans-serif;
+    background-color: red;
+} 
+  
+  
+  button:hover{
+    background: #FFD151;
+}
+  
+  button:active{
+    background: #8fFF00;
+    box-shadow : 0 0 6px #FFD151;
+}
+  
+  button:focus {outline:0;}
+  
+.widgets{
+    margin-top: 1em;
+    margin-bottom:1em;
+    color: white;
+}
+
+
+  body{
+    background: url(pokeBG5.jpg);
+}
+
+#typeBar
+{
+
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+#status
+{
+    color:white;
+}
