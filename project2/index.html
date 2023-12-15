@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="pokeStyles.css">
+    <script src="pokeScript.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>The PokeFinder!</h1>
+    </header>
+    <a href="https://people.rit.edu/jam2448/235/project2/documenation.html">Link to Documentation</a>
+    
+
+    <div class="widgets">
+    
+        
+        Search Name: <input id="searchterm" type="text" size="20" maxlength="20"/>
+
+        <select name="types" id="typeBar">
+            <option value="none">Select Type</option>
+            <option value="Bug">Bug</option>
+            <option value="Dark">Dark</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Electric">Electric</option>
+            <option value="Fairy">Fairy</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Fire">Fire</option>
+            <option value="Flying">Flying</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Grass">Grass</option>
+            <option value="Ground">Ground</option>
+            <option value="Ice">Ice</option>
+            <option value="Normal">Normal</option>
+            <option value="Poison">Poison</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Rock">Rock</option>
+            <option value="Steel">Steel</option>
+            <option value="Water">Water</option>
+    
+        </select>
+
+        <select name="color" id="colors">
+            <option value="none">Select Color</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="brown">Brown</option>
+            <option value="gray">Gray</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+            <option value="purple">Purple</option>
+            <option value="red">Red</option>
+            <option value="white">White</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <button id="searchButton"> Find Pokemon!</button>
+    </div>
+
+    <hr>
+
+    <h2>Results</h2>
+
+
+    <div id="content">
+        <p>No data yet!</p>
+    </div>
+    
+
+</body>
+</html>

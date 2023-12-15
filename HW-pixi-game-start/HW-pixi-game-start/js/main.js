@@ -2,10 +2,16 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 "use strict";
 const app = new PIXI.Application({
-    width: 600,
-    height: 600
+    width: 800,
+    height: 800
 });
-document.body.appendChild(app.view);
+
+window.onload = function()
+{
+    document.body.appendChild(app.view);
+    document.querySelector("canvas").onselectstart = function () {return false; };
+
+}
 
 // constants
 const sceneWidth = app.view.width;
@@ -79,7 +85,6 @@ function setup() {
     ship = new Ship();
     gameScene.addChild(ship);
 	
-	// #6 - Load Sounds
     // #6 - Load Sounds
     shootSound = new Howl({
         src: ['sounds/shoot.wav']
@@ -93,7 +98,7 @@ function setup() {
         src: ['sounds/fireball.mp3']
     });
 	
-	// #7 - Load sprite sheet
+	
     // #7 - Load sprite sheet
     explosionTextures = loadSpriteSheet();
 		

@@ -1,41 +1,43 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Varela+Round&display=swap');
+
 *{
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 
-header h1{
+ h1{
     margin:0;
-    color:#EDB230;
+    color:#FFC857;
     text-align:center;
+    text-decoration: #ddd;
     font-size:100px;
     padding-top: 35px;
+    
+
 }
 
 h2{
-    color:white;
+    color:#FFC857;
 }
 
-#status
-{
-    font-size: italic;
+#content {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 20px;
+  
 }
 
-#content{
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    margin: 10px;
-    gap: 20px;
-    color:#fff;
-}
 
-.result{
+.result {
     display: flex;
     flex-direction: column;
-    border: 5px solid #0a2472;
-    background-color: black;
-    color: black;
-}
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    border: 5px solid #1F2041;
+    background-color: #FFC857;
+  }
 
 .result span {
     order: -1;
@@ -49,11 +51,12 @@ h2{
 .result p {
 
     margin: 3px;
+    font-size: 20px;
 }
 
-#generations
+#colors
 {
-    background-color: green;
+    background-color: #8B85C1;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -75,36 +78,29 @@ h2{
     color : #fff;
     text-shadow : 0 1px 3px rgba(0,0,0,.4);
     font-family : sans-serif;
-    background-color: red;
+    background-color: #D68FD6;
 } 
   
   
-  button:hover{
-    background: #FFD151;
+  #searchButton:hover{
+    background:#1D3354 ;
 }
   
-  button:active{
-    background: #8fFF00;
+  #searchButton:active{
+    background: #4B3F72;
     box-shadow : 0 0 6px #FFD151;
 }
   
-  button:focus {outline:0;}
-  
-.widgets{
-    margin-top: 1em;
-    margin-bottom:1em;
-    color: white;
-}
-
 
   body{
-    background: url(pokeBG5.jpg);
+    background: url(pokemonBG2.jpeg);
+    
 }
 
 #typeBar
 {
 
-    background-color: blue;
+    background-color: #8B85C1;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -112,7 +108,56 @@ h2{
     border-radius: 4px;
 }
 
-#status
+.widgets
 {
-    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5px solid #1F2041;
+    background-color: #FFC857;
+    padding: 20px;
+    color:black;
+    font-size: 22px;
+
 }
+
+@media screen and (max-width:1024px)
+{
+    #content {
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        gap: 20px;
+        
+    }
+
+    .widgets
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        border: 5px solid #1F2041;
+        background-color: #FFC857;
+        padding: 20px;
+        max-width:fit-content;
+        color:black;
+        font-size: 22px;
+
+    }
+
+    h1{
+        margin:0;
+        color:#FFC857;
+        text-align:center;
+        text-decoration: #ddd;
+        font-size:75px;
+        padding-top: 35px;
+        
+    
+    }
+
+
+}
+

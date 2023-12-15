@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="Css/proposal.css">
+</head>
+<body>
+    <h1>Circle Blast Revamped!</h1>
+
+    <div>
+        <h1>1. High Concept</h1>
+        
+        <p>
+            It's like the circle blast homework but completely flipped on its head 
+            with new features.
+        </p>
+
+    </div>
+
+    <br>
+
+    <div>
+        <h1>2. Genres</h1>
+
+        <p>
+            Action, Shooter, Strategy
+        </p>
+    </div>
+    <br>
+
+    <div>
+        <h1>3. Platform</h1>
+
+        <p>
+            This game is a desktop experience.
+        </p>
+    </div>
+    <br>
+
+    <div>
+        <h1>4. Story</h1>
+
+        <p>
+            You are a ship traveling on the sea attempting to dodge waves of enemy ships attempting 
+            <br>to collide and shoot you with their cannonballs.
+        </p>
+    </div>
+    <br>
+
+    <div>
+        <h1>5. Esthetics</h1>
+
+        <p>
+            Style: Cartoonish and animated 
+            <br>
+            Sound: Simple - Shooting, Hit, and Game Over sound effects (more than likely 8-bit).
+        </p>
+    </div>
+    <br>
+
+    <div>
+        <h1>6. Gameplay</h1>
+
+        <p>
+            Mechanics: Movement, Shooting, Power-up collection and Use
+            <br>
+            Control: Keyboard (WASD) and Mouse (Aiming and Clicking)
+            <br>
+
+            <img src="Images/gameplay.jpeg" alt="screenshot of gameplay">
+            <img src="Images/title.jpeg" alt="screenshot of title">
+
+
+        </p>
+    </div>
+    
+    <h1>Documentation</h1>
+    <p>
+        My process began with me using the circle blast as a refrence point to use foe the basis of my game.
+       
+        <br>
+            Following my project proposal, I started by finding and replacing the sprite images for the original circle Blast.
+            I removed the circles and revamped the class to inherit from PIXI.Sprite instead. I scaled all the sprites to make sure they make sense on 
+            the page and moved on. That was the easy part.
+        <br>
+        I would consult my good friend Chat GPT to correct bugs and errors that I got in my code or to get an idea of how to implement a feature. 
+        For example, I wanted to figure out how to get the player ship to face in the direction of where the mouse is, and i used Chat GPT to help.
+        I ran into roadblock when it came to managing the collisions becuase of the sprites, and I figured out that I had to scale them down in order
+        to make them more precise. I also ran into a roadblock when it came to getting the bullets to shoot in the direction where the mouse is on the screen.
+        I had to make a normalized direction vector and then apply it to the bullet which was difficult to understand.
+
+        <br>
+        In terms of special features, I added a powerup which is basically a chance for the player to get an extra life added. 
+        I think it's an interesting mechanic because after 8 seconds theres a 30% change that an extra life will spawn, so 
+        the extra randomness added into the game will help determine how long the player will survive when it gets very hectic.
+        <br>
+        I met the requirements by having and fucntioning app in PIXI and is pretty easy to use. It goes beyond circle blast and
+        what we did in class. It does look good and it doesn use an ES6 class that I made on my own
+        <br>
+        I believe that I did well on this project, and think I should get a 90.
+
+        <br>
+        <br>
+        Sources: 
+        <br>
+        <a href="https://www.deviantart.com/turcuman/art/Pirate-Ship-Top-Down-Game-Sprite-377671050">Enemy Ship</a>
+        <br>
+        <a href="https://www.shutterstock.com/image-vector/sailing-ship-top-view-vector-design-205727944">Player Ship</a>
+        <p>
+            For the bullet sprite, I used the bomb but cut off the rope and fire.
+        </p>
+        <a href="https://www.istockphoto.com/vector/six-pixel-labels-colorful-vector-illustration-gm1210923768-350983565">Bullet Sprite</a>
+        <br>
+        <a href="https://sfxr.me/">All sound fx were used from here</a>
+        <p>
+            For the background, I used an AI art generator called NightCafe to make the image I used
+            (Its a pretty cool website)
+        </p>
+        <a href="https://creator.nightcafe.studio/creation/xWzZ24kWH5AaRTPb9TCY">Background AI Generator</a>
+
+
+
+        
+
+
+
+    </p>
+    
+    
+</body>
+</html>

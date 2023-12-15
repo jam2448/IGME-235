@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Manrope&family=Varela+Round&display=swap');
+body{
+    cursor: url(../Images/move.png) 8 8,crosshair;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+canvas{
+    border: 10px solid black;
+    font-family: 'Varela Round', sans-serif;
+}
